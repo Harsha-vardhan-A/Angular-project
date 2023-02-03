@@ -1,0 +1,10 @@
+<div class="main">
+  <div class="main-conntdisplay" [ngClass]="getcolor()">{{count}}</div>
+  <div class="main-buttons">
+    <!-- <button class="main-inc" (click)="increment()">+</button>
+    <button class="main-r" (click)="resetting()">R</button>
+    <button class="main-dec" (click)="decrement()">-</button> -->
+    <app-child  [countToChild]="count" (plusclicked)="receiveMessage($event)"></app-child>
+  </div>
+  <!-- [ngClass]="getcolor()" -->
+</div>
